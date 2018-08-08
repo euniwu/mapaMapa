@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title>MAPA</title>
-            <link rel= "stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
-            <script src= "https://openlayers.org/en/v4.6.4/build/ol.js" tye="text/javascript"></script>
-            <script src= "map.js" type="text/javascript"></script>
-    </head>
+   <!-- HEAD -->
+   <head>
+       <link rel = "stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type = "text/css">
+       <script src ="https://openlayers.org/en/v4.6.4/build/ol.js">type = "text/javascript"</script>"
+       <script src = "map.js" type= "text/javascript"></script>
+       <title>MAPA</title>
+   </head>
 
-
-    <body>
-        <div id= "map" class= "map">
-
-        </div>
-            <footer>
-                <p>This is a <a href= "#"> tutorial</a> for y'all, don't forget y'all </p>
-            </footer>
-    </body>
+   <!-- BODY -->
+   <body>
+       <div id = "map" class = "map"></div>
+       <textarea id="country-name" rows = "1" cols = "20">input country</textarea>
+       <button onclick= "panHome()">Pan back to home!! pls</button>
+       <button onclick = "panToLocation()">Pan to a location!</button>
+       <footer>
+           <p>This is a <a href="#">tutorial</a> for y'all, don't forget y'all</p>
+       </footer>
+   </body>
 </html>
